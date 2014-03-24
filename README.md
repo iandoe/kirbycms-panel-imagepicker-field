@@ -58,7 +58,7 @@ Featured_img: image.png
 You can then use it in your templates like this
 
 ```
-$featured_img = $page->images()->find($page->featured_img());
+$featured_img = $page->images()->find((string)$page->featured_img());
 
 <img src="<?php echo $featured_img->url() ?>"
 ```
