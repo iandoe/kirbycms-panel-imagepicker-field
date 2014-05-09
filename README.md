@@ -35,7 +35,7 @@ fields:
   title:
     label: Title
     type:  text
-  feature_img:
+  featured_img:
     label: Featured Image
     type:  imagepicker
     width: 100
@@ -60,7 +60,7 @@ You can then use it in your templates like this
 ```
 $featured_img = $page->images()->find((string)$page->featured_img());
 
-<img src="<?php echo $featured_img->url() ?>"
+<img src="<?php echo $featured_img->url() ?>">
 ```
 
 
