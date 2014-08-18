@@ -21,7 +21,7 @@ $ph = isset($placeholder) ? form::multilangtext($placeholder) : l::get('files.em
 
 <?php if ($page->hasImages()): ?>
 
-<select name="<?php echo $name ?>" id="imagePicker-field">
+<select name="<?php echo $name ?>" class="imagePicker-field">
 
 	<?php foreach ($page->images() as $img): ?>
 	<?php $val = $img->filename(); ?>
